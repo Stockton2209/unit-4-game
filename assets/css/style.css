@@ -1,0 +1,52 @@
+#header {
+    margin: 20px;
+    padding: 25px;
+    text-align: center;
+    background-color: lightblue;
+}
+
+.instructions {
+    margin: 20px;
+    padding: 25px;
+    text-align: center;
+    background-color: lightblue;
+}
+
+#randomnumberbox {
+    margin: 20px;
+    padding: 25px;
+    text-align: center;
+    background-color: lightblue;
+}
+
+#winslossesbox {
+    margin: 20px;
+    padding: 25px;
+    text-align: center;
+    background-color: lightblue;
+}
+
+.row {
+    margin: 20px;
+    padding: 25px;
+    text-align: center;
+    background-color: lightblue;
+}
+
+#ytsbox {
+    margin: 20px;
+    padding: 25px;
+    text-align: center;
+    background-color: lightblue;
+}
+
+#totalscorebox {
+    margin: 20px;
+    padding: 25px;
+    text-align: center;
+    background-color: lightblue;
+}
+
+.button {
+    background-color: g
+}

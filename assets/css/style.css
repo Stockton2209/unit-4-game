@@ -10,6 +10,9 @@
     padding: 25px;
     text-align: center;
     background-color: lightblue;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
 }
 
 #randomnumberbox {
@@ -17,6 +20,9 @@
     padding: 25px;
     text-align: center;
     background-color: lightblue;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
 }
 
 #winslossesbox {
@@ -24,6 +30,9 @@
     padding: 25px;
     text-align: center;
     background-color: lightblue;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
 }
 
 .row {
@@ -31,6 +40,9 @@
     padding: 25px;
     text-align: center;
     background-color: lightblue;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
 }
 
 #ytsbox {
@@ -38,6 +50,9 @@
     padding: 25px;
     text-align: center;
     background-color: lightblue;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
 }
 
 #totalscorebox {
@@ -45,8 +60,14 @@
     padding: 25px;
     text-align: center;
     background-color: lightblue;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
 }
 
 .button {
-    background-color: g
+    background-color: gray;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
 }

@@ -15,10 +15,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <!-- link to my css style sheet -->
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-        <!-- link to jquery -->
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-        <!-- link to javascript  -->
-        <link rel="stylesheet" type="text/javascript" href="assets/javascript/game.js">
+        
         
 
     </head>
@@ -41,15 +38,21 @@
                     <div class="col-lg-6">
                         <div id="randomnumberbox">
                             Random Number
+                            <span id="randomNumber"></span>
                         </div>
-                        <div id="winslossesbox">
-                            Wins:Losses:
+                        <div id="winsbox">
+                            Wins:
+                            <span id="win"></span>
+                        </div>
+                        <div id="lossesbox">
+                            Losses:
+                            <span id="lose"></span>
                         </div>
                         <div id="ytsbox">
                             Your Total Score:
                         </div>
                         <div id="totalscorebox">
-                            "total score"
+                            <span id="totalscore"></span>
                         </div>
                     </div>
                 </div>
@@ -59,27 +62,34 @@
                     <div class="col-md-3">
                         <div class="button" id="redbutton">
                             Red Button
+                            <span id="rbvalue"></span>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="button" id="bluebutton">
                             Blue Button
+                            <span id="bbvalue"></span>
                         </div>
                     </div>
                         <div class="col-md-3">
                         <div class="button" id="yellowbutton">
                             Yellow Button
+                            <span id="ybvalue"></span>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="button" id="greenbutton">
                             Green Button
+                            <span id="gbvalue"></span>
                         </div>
                     </div>
                 </div>
                     
             </div>
 
-            
+        <!-- link to jquery -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <!-- link to javascript  -->
+        <script type="text/javascript" src="assets/javascript/game.js"></script>   
         </body>
 </html>

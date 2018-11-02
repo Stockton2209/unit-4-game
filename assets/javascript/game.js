@@ -1,11 +1,22 @@
+$(document).ready(function(){
+    var targetNum = Math.floor(Math.random()*101+19);
+    //generate random number at beginning
+     $('#randomNumber').text(targetNum);
+     //add the random number to the target number box
+
+    var totalScore: 0;
+    var wins: 0;
+    var losses: 0;
+    //variables for the counters
  
 
- //red button value: 0
- //blue button value: 0
- //yellow button value: 0
- //green button value: 0
 
-    var totalscore: 0;
+ //reset function
+    //targetNum generate new random
+    //button values reset
+    //totalScore = 0
+
+    var totalScore: 0;
     var wins: 0;
     var losses: 0;
 
@@ -18,7 +29,14 @@
     //wins counter goes up
     //game resets (without refreshing)
         //new random number, new button values, total score back to 0,
+    if(totalScore === targetNum) {
+        alert("You Win!!!");
+        wins++;
+        $(".win").html(win);
+        reset();
+    }
 //if total score > random number : You Lose!
     //loss counter goes up
     //game resets (without refreshing)
         //new random number, new button values, total score back to 0,
+}

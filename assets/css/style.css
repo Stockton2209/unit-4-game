@@ -25,7 +25,7 @@
     border-width: 5px;
 }
 
-#winslossesbox {
+#winsbox, #lossesbox {
     margin: 20px;
     padding: 25px;
     text-align: center;

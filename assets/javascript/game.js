@@ -4,9 +4,9 @@ $(document).ready(function(){
      $("#randomNumber").text(targetNum);
      //add the random number to the target number box
 
-    var totalScore: 0;
-    var wins: 0;
-    var losses: 0;
+    var totalScore= 0;
+    var wins= 0;
+    var losses= 0;
     //variables for the counters
 
     var hv1= Math.floor(Math.random()*11+1)
@@ -35,19 +35,50 @@ $(document).ready(function(){
         //make new random values for each button
         //reset the total score and display it
         
- 
-//if total score = random number : You Win!
-    //wins counter goes up
-    //game resets (without refreshing)
-        //new random number, new button values, total score back to 0,
+    //assign click values for each button
+    //button1(red button)
+    $("#redbutton").on ('click', function(){
+        totalScore = totalScore + hv1;
+        $("#totalscore").text(totalScore);       
+      })
+    
+    //button2(blue button)
+    $("#bluebutton").on ('click', function(){
+        totalScore = totalScore + hv2;
+        $("#totalscore").text(totalScore);       
+      })
+
+    //button3(yellow button)
+    $("#yellowbutton").on ('click', function(){
+        totalScore = totalScore + hv3;
+        $("#totalscore").text(totalScore);       
+      })
+
+    //button4(green button)
+    $("#greenbutton").on ('click', function(){
+        totalScore = totalScore + hv4;
+        $("#totalscore").text(totalScore);       
+      })
+
+      //if total score = random number : You Win!
+        //wins counter goes up
+        //wins display gets updated
+        //game resets 
     if(totalScore === targetNum) {
         alert("You Win!!!");
         wins++;
-        $(".win").html(win);
+        $("#win").html(wins);
         reset();
     }
-//if total score > random number : You Lose!
-    //loss counter goes up
-    //game resets (without refreshing)
-        //new random number, new button values, total score back to 0,
-}
+
+    //if total score > random number : You Lose!
+        //loss counter goes up
+        //loss display updated
+        //game resets 
+    if(totalScore > targetNum) {
+        alert("You've Lost =(");
+        losses++;
+        $("#lose").html(losses);
+        reset();
+    }
+});
